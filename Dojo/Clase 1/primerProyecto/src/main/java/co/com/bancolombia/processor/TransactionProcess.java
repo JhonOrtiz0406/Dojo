@@ -12,6 +12,7 @@ public class TransactionProcess implements Processor {
 
     @Override
     public void process(Exchange exchange) throws Exception {
+
         ResponseTransaction rt = (ResponseTransaction) exchange.getIn().getExchange();
         ResponseServiceTS rpTS = new ResponseServiceTS();
         Data data = new Data();

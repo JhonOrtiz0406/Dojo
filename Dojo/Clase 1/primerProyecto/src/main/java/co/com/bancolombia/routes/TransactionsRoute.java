@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.dataformat.xmljson.XmlJsonDataFormat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class TransactionsRoute extends RouteBuilder {
+
 
    @Autowired
    private TransactionProcess transactionProcess;

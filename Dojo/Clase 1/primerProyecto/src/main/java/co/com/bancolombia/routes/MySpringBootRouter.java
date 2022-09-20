@@ -33,7 +33,7 @@ public class MySpringBootRouter extends RouteBuilder {
                 .post("/transaction")
                 .route()
                 .to("direct:transaction")
-                .endRest();
+        .endRest();
     }
 
 }

@@ -2,6 +2,7 @@ co\com\bancolombia\models\Transaction\responseTransaction\AcumularTopeResponse.c
 co\com\bancolombia\models\Transaction\responseTransaction\Header.class
 co\com\bancolombia\routes\carfactRoute.class
 co\com\bancolombia\models\Transaction\responseTransaction\ResponseTransaction$ResponseTransactionBuilder.class
+co\com\bancolombia\routes\TransactionsRoute.class
 co\com\bancolombia\models\Transaction\responseService\Data$DataBuilder.class
 co\com\bancolombia\models\Transaction\responseTransaction\ResponseStatus.class
 co\com\bancolombia\models\Transaction\responseTransaction\AcumularTopeResponse$AcumularTopeResponseBuilder.class
