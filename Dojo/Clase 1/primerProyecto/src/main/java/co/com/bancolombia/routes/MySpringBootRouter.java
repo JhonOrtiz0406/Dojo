@@ -30,9 +30,9 @@ public class MySpringBootRouter extends RouteBuilder {
                 .to("direct:carfact")
                 .endRest()
                 //Post
-                .post("/transaction")
+                .post("/customer")
                 .route()
-                .to("direct:transaction")
+                .to("direct:customer")
         .endRest();
     }
 
