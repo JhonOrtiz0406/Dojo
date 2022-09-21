@@ -14,6 +14,7 @@ public class carfactRoute extends RouteBuilder {
 
     @Autowired
     private carfactProcess carfactProcess;
+
     @Override
     public void configure() throws Exception {
 

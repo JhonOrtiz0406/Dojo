@@ -1,18 +1,12 @@
 package co.com.bancolombia.models.Customer.responseCustomerAPI;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class HeaderRS {
-    @JsonProperty("StatusCode")
-    public String statusCode;
-    @JsonProperty("StatusDesc")
-    public String statusDesc;
-    @JsonProperty("userID")
+    public String StatusCode;
+    public String StatusDesc;
     public int userID;
 }

@@ -1,17 +1,12 @@
 package co.com.bancolombia.models.Customer.responseCustomerAPI;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class ResponseCustomerApi {
-    public HeaderRS headerRS;
-    @JsonProperty("RFECHANAC")
-    public String rFECHANAC;
-    @JsonProperty("RFECHAEXP")
-    public String rFECHAEXP;
+    public HeaderRS HeaderRS;
+    public String RFECHANAC;
+    public String RFECHAEXP;
 }

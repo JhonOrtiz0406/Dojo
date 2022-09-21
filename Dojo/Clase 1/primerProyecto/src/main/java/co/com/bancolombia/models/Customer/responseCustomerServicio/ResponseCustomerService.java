@@ -8,8 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ResponseCustomerService {
-
+public class ResponseCustomerService{
     @JsonProperty("data")
-    public Data data;
+    private Data data;
 }

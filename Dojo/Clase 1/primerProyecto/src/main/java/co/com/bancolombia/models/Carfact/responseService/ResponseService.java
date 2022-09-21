@@ -13,6 +13,6 @@ import javax.validation.Valid;
 public class ResponseService {
 
     @Valid
-    @JsonProperty("data")
+    @JsonProperty("dataServ")
     private Data data;
 }
