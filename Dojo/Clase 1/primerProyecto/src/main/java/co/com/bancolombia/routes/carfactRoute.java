@@ -19,8 +19,8 @@ public class carfactRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
-        onException(ValidationException.class)
-                .to("activemq:validationFailed");
+        //onException(ValidationException.class)
+        //  .to("activemq:validationFailed");
 
         from("direct:carfact")
                 .to("http://catfact.ninja/fact?throwExceptionOnFailure=false&bridgeEndpoint=true&httpMethod=GET")

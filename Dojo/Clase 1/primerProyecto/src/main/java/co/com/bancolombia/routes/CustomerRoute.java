@@ -21,8 +21,8 @@ public class CustomerRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
-        onException(ValidationException.class)
-                .to("activemq:validationFailed");
+        //onException(ValidationException.class)
+        //  .to("activemq:validationFailed");
 
         from("direct:customer")
                 .tracing()
