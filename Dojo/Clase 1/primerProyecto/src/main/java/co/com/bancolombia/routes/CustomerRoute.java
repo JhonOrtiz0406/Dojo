@@ -4,6 +4,7 @@ import co.com.bancolombia.models.Customer.responseCustomerAPI.ResponseCustomerAp
 import co.com.bancolombia.models.Customer.responseCustomerServicio.ResponseCustomerService;
 import co.com.bancolombia.processor.customerProcess;
 import lombok.RequiredArgsConstructor;
+import org.apache.camel.ValidationException;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.jackson.JacksonDataFormat;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,10 @@ public class CustomerRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
+
+        onException(ValidationException.class)
+                .to("activemq:validationFailed");
+
         from("direct:customer")
                 .tracing()
                 .streamCaching()
